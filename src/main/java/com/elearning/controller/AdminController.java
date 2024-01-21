@@ -91,15 +91,6 @@ public class AdminController {
 	@ModelAttribute
 	public void payments(Model m) {
 		List<Payment> order = payRepo.findAll();
-//		List<User> user=new ArrayList<User>();
-//		List<Course> course=new ArrayList<Course>();
-//		Iterator<Payment> itr=order.iterator();
-//		while(itr.hasNext()) {
-//			Payment pay=itr.next();
-//			user.add(pay.getUser());
-//			course.add(pay.getCourse());
-//		}
-//		m.addAttribute("listUser", user);
 		m.addAttribute("orderList", order);
 	}
 	
